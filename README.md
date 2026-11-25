@@ -57,7 +57,27 @@ Standard text summarisers treat all text identically. However, corporate sprint 
 
 ---
 
-## 🛠️ Technology Stack
+## 📸 Application Screenshots
+
+> *All screenshots below showcase the **SAAR AI Frontend Prototype** running on `localhost`. Output text, scores, and checklists represent structured demonstration mock datasets.*
+
+### 1. Landing Page & Hero Section
+*Featuring the floating glassmorphic navbar, organic fluid liquid mesh background animation, and interactive quick-start CTA.*
+![SAAR AI Landing Page](screenshots/Screenshot_2026-11-25_143624.png)
+
+### 2. Dual Studio Interface & Summariser Canvas
+*Split-screen layout with `input.txt` editor on the left and live `output` analytics studio on the right.*
+![SAAR AI Studio Interface](screenshots/Screenshot_2026-11-25_143713.png)
+
+### 3. Generated Summary & Structured Key Takeaways
+*Executive abstract summary with high-priority numbered key highlights extracted from the transcript.*
+![SAAR AI Summary & Key Points](screenshots/Screenshot_2026-11-25_143728.png)
+
+### 4. Interactive Action Items & Keyword Extraction
+*Clickable task checklist with interactive strike-through state and topic keyword tags.*
+![SAAR AI Action Items & Keywords](screenshots/Screenshot_2026-11-25_143734.png)
+
+---
 
 | Layer | Technology | Details |
 | :--- | :--- | :--- |
