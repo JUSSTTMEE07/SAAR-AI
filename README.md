@@ -57,29 +57,29 @@ Standard text summarisers treat all text identically. However, corporate sprint 
 
 ---
 
-## 📸 Application Screenshots
+## 📸 Application Walkthrough & Screenshots
 
-> *All screenshots below showcase the **SAAR AI Frontend Prototype** running on `localhost`. Output text, scores, and checklists represent structured demonstration mock datasets.*
+> *All screenshots below showcase the actual **SAAR AI Frontend Prototype** running on `localhost`. Output text, analytics metrics, and checklists represent structured demonstration mock datasets.*
 
 ### 1. Landing Page & Hero Section
-*Featuring the floating glassmorphic navbar, organic fluid liquid mesh background animation, and interactive quick-start CTA.*
-![SAAR AI Landing Page](screenshots/Screenshot_2026-11-25_143624.png)
+*Featuring the floating glassmorphic navbar, organic fluid liquid mesh background animation, brand identity, and quick-start CTA.*  
+![SAAR AI Landing Page](screenshots/01_landing_page_hero.png)
 
-### 2. Dual Studio Interface & Summariser Canvas
-*Split-screen layout with `input.txt` editor on the left and live `output` analytics studio on the right.*
-![SAAR AI Studio Interface](screenshots/Screenshot_2026-11-25_143713.png)
+### 2. Dual Studio Interface & Summariser Output
+*Split-screen layout with the `input.txt` editor on the left and live structured output (Summary, Key Points, Action Checklists, and Keyword Pills) on the right.*  
+![SAAR AI Studio & Output](screenshots/02_summariser_studio_output.png)
 
-### 3. Generated Summary & Structured Key Takeaways
-*Executive abstract summary with high-priority numbered key highlights extracted from the transcript.*
-![SAAR AI Summary & Key Points](screenshots/Screenshot_2026-11-25_143728.png)
+### 3. How It Works (Process Flow)
+*Glassmorphic process cards detailing the 4-step NLP summarisation workflow with hover illumination.*  
+![SAAR AI How It Works](screenshots/03_how_it_works_process.png)
 
-### 4. Interactive Action Items & Keyword Extraction
-*Clickable task checklist with interactive strike-through state and topic keyword tags.*
-![SAAR AI Action Items & Keywords](screenshots/Screenshot_2026-11-25_143734.png)
+### 4. Features & Academic Project Metadata
+*Interactive feature tiles and KR Mangalam University Capstone Project 18 specifications with tech stack badges.*  
+![SAAR AI Features & About](screenshots/04_features_and_about.png)
 
 ---
 
-| Layer | Technology | Details |
+## 🛠️ Technology Stack
 | :--- | :--- | :--- |
 | **Frontend Framework** | **React 19** | Modern functional components, React Hooks (`useState`, `useEffect`, `useRef`, `useCallback`) |
 | **Build Tool & Bundler** | **Vite 8** | Hot Module Replacement (HMR), LightningCSS optimization, ES modules |
