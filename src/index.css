@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f5f4f0;
+  --white: #ffffff;
+  --ink: #0c0c0c;
+  --ink2: #1a1a2e;
+  --muted: #5a6072;
+  --faint: #9499a6;
+  --line: #e3e1db;
+  --line2: #cbc8c0;
+
+  --purple: #6c3ce1;
+  --purple-h: #5a2fbf;
+  --purple-l: #f0ebff;
+  --blue: #2152cc;
+  --blue-l: #ebf1ff;
+  --teal: #0d8f84;
+  --teal-l: #edfaf8;
+  --green: #1a7f4b;
+  --green-l: #edfaf3;
+  --amber: #a66200;
+  --amber-l: #fff8ec;
+  --red: #cc2d2d;
+  --red-l: #fff1f1;
+
+  --font: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #d4c5ff;
+  color: var(--ink);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1cec8;
+  border-radius: 99px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes typewrite {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(108, 60, 225, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(108, 60, 225, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(108, 60, 225, 0);
+  }
+}
+
+.anim {
+  animation: fadeUp 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.anim-1 {
+  animation-delay: 0.05s;
+}
+.anim-2 {
+  animation-delay: 0.12s;
+}
+.anim-3 {
+  animation-delay: 0.19s;
+}
+.anim-4 {
+  animation-delay: 0.26s;
+}
+.anim-5 {
+  animation-delay: 0.33s;
+}
+.slide-in {
+  animation: slideIn 0.35s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.pop-in {
+  animation: popIn 0.35s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #edebe6 25%, #e0ddd7 50%, #edebe6 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 6px;
+}
+
+/* Liquid organic water flow animations */
+@keyframes waterFlow1 {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(45px, -35px) scale(1.12) rotate(45deg);
+  }
+  66% {
+    transform: translate(-30px, 40px) scale(0.92) rotate(90deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes waterFlow2 {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-50px, 45px) scale(0.9) rotate(-60deg);
+  }
+  66% {
+    transform: translate(35px, -30px) scale(1.15) rotate(40deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes waterFlow3 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(60px, 30px) scale(1.18);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.liquid-orb-1 {
+  animation: waterFlow1 18s ease-in-out infinite;
+  will-change: transform;
+}
+
+.liquid-orb-2 {
+  animation: waterFlow2 22s ease-in-out infinite;
+  will-change: transform;
+}
+
+.liquid-orb-3 {
+  animation: waterFlow3 16s ease-in-out infinite;
+  will-change: transform;
+}
+
+textarea {
+  font-family: var(--font);
+}
+button {
+  font-family: var(--font);
+}

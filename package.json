@@ -1,0 +1,29 @@
+{
+  "name": "saar-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["nlp", "summarisation", "saar-ai", "react", "vite", "tailwind"],
+  "author": "Group 2 - KR Mangalam University",
+  "type": "module",
+  "license": "ISC",
+  "description": "SAAR AI — Extract What Matters. Meeting & Lecture Summarisation Using NLP (KR Mangalam University Capstone Project 18)",
+  "dependencies": {
+    "lucide-react": "^1.79.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@vitejs/plugin-react": "^6.3.0",
+    "autoprefixer": "^10.7.0",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
+  }
+}
